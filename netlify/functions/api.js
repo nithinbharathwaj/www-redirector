@@ -7,4 +7,4 @@ app.get('*', (req, res) => {
     return res.redirect(301, `${protocol}://${wwwDomain}`);
 });
 
-export const handler = serverless(api);
+export const handler = serverless(app);
